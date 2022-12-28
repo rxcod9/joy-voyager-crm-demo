@@ -17,7 +17,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('voyager::seeders.settings.site.title'),
-                'value'        => __('voyager::seeders.settings.site.title'),
+                'value'        => config('app.name', __('voyager::seeders.settings.site.title')),
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 1,
@@ -29,7 +29,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('voyager::seeders.settings.site.description'),
-                'value'        => __('voyager::seeders.settings.site.description'),
+                'value'        => config('app.description', __('voyager::seeders.settings.site.description')),
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 2,
@@ -77,7 +77,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('voyager::seeders.settings.admin.title'),
-                'value'        => 'Joy Voyager',
+                'value'        => config('app.name', 'Joy Voyager'),
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 1,
@@ -89,7 +89,7 @@ class SettingsTableSeeder extends Seeder
         if (!$setting->exists) {
             $setting->fill([
                 'display_name' => __('voyager::seeders.settings.admin.description'),
-                'value'        => __('voyager::seeders.settings.admin.description_value'),
+                'value'        => config('app.description', __('voyager::seeders.settings.admin.description_value')),
                 'details'      => '',
                 'type'         => 'text',
                 'order'        => 2,

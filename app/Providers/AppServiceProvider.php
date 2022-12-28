@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Middleware\VoyagerAdminMiddleware;
 use App\Models\Category;
 use App\Models\DataRow;
 use App\Models\DataSetting;
@@ -15,10 +16,12 @@ use App\Models\Permission;
 use App\Models\Post;
 use App\Models\Role;
 use App\Models\Setting;
-use App\Models\User;
 use App\Models\Translation;
+use App\Models\User;
 use App\Models\UserSetting;
 use App\Models\UserSettingType;
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use TCG\Voyager\Facades\Voyager;
 
@@ -38,7 +41,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Router $router, Dispatcher $event)
     {
         \URL::forceRootUrl(\Config::get('app.url'));
         // And this if you wanna handle https URL scheme
@@ -66,5 +69,7 @@ class AppServiceProvider extends ServiceProvider
         Voyager::useModel('DataTypeSetting', DataTypeSetting::class);
         Voyager::useModel('DataSettingType', DataSettingType::class);
         Voyager::useModel('DataSetting', DataSetting::class);
+
+        $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
     }
 }
