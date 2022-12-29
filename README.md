@@ -1,5 +1,5 @@
 [![Latest Version](https://img.shields.io/github/v/release/rxcod9/joy-voyager-crm-demo?style=flat-square)](https://github.com/rxcod9/joy-voyager-crm-demo/releases)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/rxcod9/joy-voyager-crm-demo/tests?label=tests)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rxcod9/joy-voyager-crm-demo/run-tests.yml?branch=main&label=tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/joy/voyager-crm-demo.svg?style=flat-square)](https://packagist.org/packages/joy/voyager-crm-demo)
 
 # **Joy Voyager** - Crm Demo
