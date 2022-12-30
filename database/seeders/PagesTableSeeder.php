@@ -234,6 +234,7 @@ class PagesTableSeeder extends Seeder
 
         //Menu Item
         $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
         $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.pages'),
@@ -246,7 +247,7 @@ class PagesTableSeeder extends Seeder
                 'icon_class' => 'voyager-file-text',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 7,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 

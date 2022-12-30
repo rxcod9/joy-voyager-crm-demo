@@ -162,6 +162,7 @@ class CategoriesTableSeeder extends Seeder
 
         //Menu Item
         $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
         $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.categories'),
@@ -174,7 +175,7 @@ class CategoriesTableSeeder extends Seeder
                 'icon_class' => 'voyager-categories',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 8,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 
