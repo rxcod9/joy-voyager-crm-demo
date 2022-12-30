@@ -304,6 +304,7 @@ class PostsTableSeeder extends Seeder
 
         //Menu Item
         $menu = Voyager::model('Menu')->where('name', 'admin')->firstOrFail();
+        $maxOrder = Voyager::model('MenuItem')->max('order') ?? 0;
         $menuItem = Voyager::model('MenuItem')->firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('voyager::seeders.menu_items.posts'),
@@ -316,7 +317,7 @@ class PostsTableSeeder extends Seeder
                 'icon_class' => 'voyager-news',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 6,
+                'order'      => ++$maxOrder,
             ])->save();
         }
 
