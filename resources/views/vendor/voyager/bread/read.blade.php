@@ -139,16 +139,14 @@
                 </div>
             </div>
         </div>
-        {{--<div class="row">
+        <div class="row">
             <div class="col-md-12">
                 <x-joy-voyager-relations-tables
                     :parentSlug="$dataType->slug"
                     :id="$dataTypeContent->getKey()"
-                    :relations="['roles' => 'roles', 'role' => 'roles']"
                 />
-                <!-- <x-joy-voyager-datatables /> -->
             </div>
-        </div>--}}
+        </div>
     </div>
 
     {{-- Single delete modal --}}
