@@ -2486,16 +2486,16 @@
         },
         {
             "name": "joy/voyager-crm",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-crm.git",
-                "reference": "a06161de2613dea0246a6eee68b4ad74ac010264"
+                "reference": "b1d0c6124c0cc34155eaa10c1db4ba44f4e35107"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/a06161de2613dea0246a6eee68b4ad74ac010264",
-                "reference": "a06161de2613dea0246a6eee68b4ad74ac010264",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/b1d0c6124c0cc34155eaa10c1db4ba44f4e35107",
+                "reference": "b1d0c6124c0cc34155eaa10c1db4ba44f4e35107",
                 "shasum": ""
             },
             "require": {
@@ -2556,7 +2556,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-crm/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v2.0.4"
+                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v2.0.5"
             },
             "funding": [
                 {
@@ -2564,7 +2564,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-13T04:53:04+00:00"
+            "time": "2023-01-14T09:21:39+00:00"
         },
         {
             "name": "joy/voyager-dashboard",
