@@ -70,6 +70,8 @@ COPY docker/8.1/php-fpm.conf /etc/php/8.1/fpm/php-fpm.conf
 COPY . /var/www/html
 RUN chmod +x /var/www/html/artisan
 
+RUN composer install -vvvv
+
 EXPOSE 8000
 
 ENTRYPOINT ["start-container"]
