@@ -2,7 +2,8 @@ FROM ubuntu:22.04
 
 LABEL maintainer="Taylor Otwell"
 
-ARG WWWGROUP
+ARG WWWGROUP=1002
+ARG WWWUSER=1002
 ARG NODE_VERSION=16
 ARG POSTGRES_VERSION=14
 
@@ -65,6 +66,9 @@ COPY h5bp /etc/nginx/h5bp
 COPY default /etc/nginx/sites-available/default
 COPY php-fpm.conf /etc/php/8.1/fpm/php-fpm.conf
 # COPY xdebug.ini /etc/php/8.1/mods-available/xdebug.ini
+
+COPY ./ /var/www/html
+RUN chmod +x /var/www/html/artisan
 
 EXPOSE 8000
 
