@@ -68,6 +68,9 @@ COPY docker/8.1/php-fpm.conf /etc/php/8.1/fpm/php-fpm.conf
 # COPY docker/8.1/xdebug.ini /etc/php/8.1/mods-available/xdebug.ini
 
 COPY . /var/www/html
+
+RUN touch /var/www/html/storage/logs/laravel.log
+RUN chmod 755 /var/www/html/storage/logs/laravel.log
 RUN chmod +x /var/www/html/artisan
 
 RUN composer install -vvvv
