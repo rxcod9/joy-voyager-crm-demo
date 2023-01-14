@@ -71,6 +71,7 @@ COPY . /var/www/html
 RUN chmod +x /var/www/html/artisan
 
 RUN composer install -vvvv
+RUN php artisan migrate --force
 
 EXPOSE 8000
 
