@@ -15,6 +15,7 @@ use App\Models\Page;
 use App\Models\Permission;
 use App\Models\Post;
 use App\Models\Role;
+use App\Models\Sample;
 use App\Models\Setting;
 use App\Models\Translation;
 use App\Models\User;
@@ -69,6 +70,7 @@ class AppServiceProvider extends ServiceProvider
         Voyager::useModel('DataTypeSetting', DataTypeSetting::class);
         Voyager::useModel('DataSettingType', DataSettingType::class);
         Voyager::useModel('DataSetting', DataSetting::class);
+        Voyager::useModel('Sample', Sample::class);
 
         $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
     }
