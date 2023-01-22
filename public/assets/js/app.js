@@ -115,6 +115,7 @@ window.Cropper = __webpack_require__(/*! cropperjs */ "./node_modules/cropperjs/
 window.Cropper = 'default' in window.Cropper ? window.Cropper['default'] : window.Cropper;
 window.toastr = __webpack_require__(/*! toastr */ "./node_modules/toastr/toastr.js");
 window.DataTable = __webpack_require__(/*! datatables */ "./node_modules/datatables/media/js/jquery.dataTables.js");
+// require('./dataTables.colReorder');
 __webpack_require__(/*! datatables-bootstrap3-plugin/media/js/datatables-bootstrap3 */ "./node_modules/datatables-bootstrap3-plugin/media/js/datatables-bootstrap3.js");
 window.EasyMDE = __webpack_require__(/*! easymde */ "./node_modules/easymde/src/js/easymde.js");
 __webpack_require__(/*! dropzone */ "./node_modules/dropzone/dist/dropzone.js");
@@ -202,7 +203,15 @@ $(document).ready(function () {
     }
     $this.closest('.panel').toggleClass('is-fullscreen');
   });
-  $('.datepicker').datetimepicker();
+  $('.datepicker').datetimepicker({
+    useCurrent: false,
+    showClear: true,
+    debug: true,
+    showClose: true,
+    widgetPositioning: {
+      vertical: 'bottom'
+    }
+  });
 
   // Save shortcut
   $(document).keydown(function (e) {
@@ -305,6 +314,13 @@ var initSelect2 = function initSelect2(el, options) {
   $(el).select2(_objectSpread(_objectSpread({}, {
     width: '100%'
   }), options));
+  $(el).on('select2:select', function (e) {
+    var data = e.params.data;
+    if (data.id == '') {
+      // "None" was selected. Clear all selected options
+      $(this).val([]).trigger('change');
+    }
+  });
 };
 
 // select.select2-ajax
@@ -379,10 +395,17 @@ var initSelect2MorphToType = function initSelect2MorphToType(el, options) {
   $(el).select2(_objectSpread(_objectSpread({}, {
     width: '100%'
   }), options));
-  $(el).on('change', function (e) {
-    console.log('e', e);
-    $('select.select2-morph-to-ajax[name=' + $(el).data('column') + ']').val(null).trigger('change');
-    console.log('val', $('select.select2-morph-to-ajax[name=' + $(el).data('column') + ']').val());
+  $(el).on('change.select2-morph-to-type', function (e) {
+    var parent = $(this).closest('.form-group');
+    var idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', parent);
+    if (idEl.length <= 0) {
+      idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', parent);
+    }
+    if (!idEl.prop('multiple')) {
+      idEl.val(null).trigger('change');
+    } else {
+      idEl.val([]).trigger('change');
+    }
   });
 };
 
@@ -406,11 +429,11 @@ var initSelect2MorphToAjax = function initSelect2MorphToAjax(el, options) {
       ajax: {
         url: $(this).data('get-items-route'),
         data: function data(params) {
+          var parent = $(this).closest('.form-group');
           var query = {
             search: params.term,
             type: $(this).data('get-items-field'),
-            "type-column": $(this).data('type-column'),
-            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']').val(),
+            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', parent).val(),
             method: $(this).data('method'),
             id: $(this).data('id'),
             page: params.page || 1

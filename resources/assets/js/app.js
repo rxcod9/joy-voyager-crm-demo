@@ -8,6 +8,7 @@ window.Cropper = require('cropperjs');
 window.Cropper = 'default' in window.Cropper ? window.Cropper['default'] : window.Cropper;
 window.toastr = require('toastr');
 window.DataTable = require('datatables');
+// require('./dataTables.colReorder');
 require('datatables-bootstrap3-plugin/media/js/datatables-bootstrap3');
 window.EasyMDE = require('easymde');
 require('dropzone');
@@ -109,7 +110,15 @@ $(document).ready(function () {
         $this.closest('.panel').toggleClass('is-fullscreen');
     });
 
-    $('.datepicker').datetimepicker();
+    $('.datepicker').datetimepicker({
+        useCurrent: false,
+        showClear: true,
+        debug: true,
+        showClose: true,
+        widgetPositioning: {
+            vertical: 'bottom',
+        },
+    });
 
     // Save shortcut
     $(document).keydown(function (e) {

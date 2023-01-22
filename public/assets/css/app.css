@@ -298,8 +298,8 @@ th {
 }
 @font-face {
   font-family: "Glyphicons Halflings";
-  src: url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("voyager-assets?path=fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
   position: relative;
@@ -29292,21 +29292,21 @@ limitations under the License.
 
 /********** END SEARCH BAR CSS **********/
 /********** Overriding Data Tables Icons **********/
-.voyager table.dataTable thead th.sorting:after, .voyager table.dataTable thead th.sorting_asc:after, .voyager table.dataTable thead th.sorting_desc:after, div.dataTables_paginate li.last a:after, div.dataTables_paginate li.next a:after, div.dataTables_paginate li.first a:before, div.dataTables_paginate li.previous a:before {
+.voyager table.dataTable > thead > th.sorting:after, .voyager table.dataTable > thead > th.sorting_asc:after, .voyager table.dataTable > thead > th.sorting_desc:after, div.dataTables_paginate li.last a:after, div.dataTables_paginate li.next a:after, div.dataTables_paginate li.first a:before, div.dataTables_paginate li.previous a:before {
   font-family: Voyager;
 }
 
-.voyager table.dataTable thead th.sorting:after {
+.voyager table.dataTable > thead > th.sorting:after {
   content: "o";
   margin-top: 3px;
 }
 
-.voyager table.dataTable thead th.sorting_asc:after {
+.voyager table.dataTable > thead > th.sorting_asc:after {
   content: "p";
   margin-top: 5px;
 }
 
-.voyager table.dataTable thead th.sorting_desc:after {
+.voyager table.dataTable > thead > th.sorting_desc:after {
   content: "q";
 }
 

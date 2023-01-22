@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52f55e967a951ac5c638396822e5720e",
+    "content-hash": "ad0c5d2c1a91ddc144e8fa6ab1118530",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1205,26 +1205,26 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.2.5",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "b531a2311709443320c786feb4519cfaf94af796"
+                "reference": "3a85486b709bc384dae8eb78fb2eec649bdb64ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b531a2311709443320c786feb4519cfaf94af796",
-                "reference": "b531a2311709443320c786feb4519cfaf94af796",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/3a85486b709bc384dae8eb78fb2eec649bdb64ff",
+                "reference": "3a85486b709bc384dae8eb78fb2eec649bdb64ff",
                 "shasum": ""
             },
             "require": {
-                "doctrine/lexer": "^1.2|^2",
-                "php": ">=7.2",
-                "symfony/polyfill-intl-idn": "^1.15"
+                "doctrine/lexer": "^2.0 || ^3.0",
+                "php": ">=8.1",
+                "symfony/polyfill-intl-idn": "^1.26"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.8|^9.3.3",
-                "vimeo/psalm": "^4"
+                "phpunit/phpunit": "^9.5.27",
+                "vimeo/psalm": "^4.30"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -1232,7 +1232,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
@@ -1260,7 +1260,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/3.2.5"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.1"
             },
             "funding": [
                 {
@@ -1268,7 +1268,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-02T17:26:14+00:00"
+            "time": "2023-01-14T14:17:03+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -2155,16 +2155,16 @@
         },
         {
             "name": "joy/voyager-api",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "c2d50f5d77bcce438cf36f439342b89956154efb"
+                "reference": "abb9f56ce46ec46ae307f020bc6e98ac09908c05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/c2d50f5d77bcce438cf36f439342b89956154efb",
-                "reference": "c2d50f5d77bcce438cf36f439342b89956154efb",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/abb9f56ce46ec46ae307f020bc6e98ac09908c05",
+                "reference": "abb9f56ce46ec46ae307f020bc6e98ac09908c05",
                 "shasum": ""
             },
             "require": {
@@ -2229,7 +2229,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -2237,20 +2237,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T09:37:20+00:00"
+            "time": "2023-01-22T16:26:58+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api-auth.git",
-                "reference": "0e4d8b478607d930403b501f931145e1f6b7ec4e"
+                "reference": "0e87f16c5122b425c08719794e3a0d3f970de18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/0e4d8b478607d930403b501f931145e1f6b7ec4e",
-                "reference": "0e4d8b478607d930403b501f931145e1f6b7ec4e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/0e87f16c5122b425c08719794e3a0d3f970de18c",
+                "reference": "0e87f16c5122b425c08719794e3a0d3f970de18c",
                 "shasum": ""
             },
             "require": {
@@ -2313,7 +2313,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api-auth/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -2321,20 +2321,104 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T09:38:14+00:00"
+            "time": "2023-01-22T16:29:15+00:00"
         },
         {
-            "name": "joy/voyager-bulk-update",
-            "version": "v1.2.33",
+            "name": "joy/voyager-bread-sample",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rxcod9/joy-voyager-bulk-update.git",
-                "reference": "ad34bd2ab70a103b38b575a856b7789e450e2131"
+                "url": "https://github.com/rxcod9/joy-voyager-bread-sample.git",
+                "reference": "bd8bda176e94ec2fcf2bd8360739e676c9039df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bulk-update/zipball/ad34bd2ab70a103b38b575a856b7789e450e2131",
-                "reference": "ad34bd2ab70a103b38b575a856b7789e450e2131",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bread-sample/zipball/bd8bda176e94ec2fcf2bd8360739e676c9039df7",
+                "reference": "bd8bda176e94ec2fcf2bd8360739e676c9039df7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7|^8|^9",
+                "joy/voyager-core": "^1.0",
+                "joy/voyager-datatable": "^1.0|^2.0",
+                "php": "^7.3|^8.0|^9.0",
+                "tcg/voyager": "^1.4"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "^9.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joy\\VoyagerBreadSample\\VoyagerBreadSampleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "Joy\\VoyagerBreadSample\\": "src",
+                    "Joy\\VoyagerBreadSample\\Database\\Seeders\\": "database/seeders/",
+                    "Joy\\VoyagerBreadSample\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ramakant Gangwar",
+                    "email": "gangwar.ramakant@gmail.com",
+                    "homepage": "https://github.com/rxcod9",
+                    "role": "Tech Lead & Architect"
+                }
+            ],
+            "description": "This Laravel/Voyager module adds VoyagerBreadSample support to Voyager.",
+            "homepage": "https://github.com/rxcod9/joy-voyager-bread-sample",
+            "keywords": [
+                "bread-sample",
+                "cms",
+                "joy",
+                "joy-voyager-bread-sample",
+                "laravel",
+                "voyager",
+                "voyager-bread-sample"
+            ],
+            "support": {
+                "issues": "https://github.com/rxcod9/joy-voyager-bread-sample/issues",
+                "source": "https://github.com/rxcod9/joy-voyager-bread-sample/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/ramakant",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-01-22T20:07:23+00:00"
+        },
+        {
+            "name": "joy/voyager-bulk-update",
+            "version": "v1.2.34",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rxcod9/joy-voyager-bulk-update.git",
+                "reference": "97b8bdc7d03a5036382ab4402c5d202c0609a141"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-bulk-update/zipball/97b8bdc7d03a5036382ab4402c5d202c0609a141",
+                "reference": "97b8bdc7d03a5036382ab4402c5d202c0609a141",
                 "shasum": ""
             },
             "require": {
@@ -2394,7 +2478,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-bulk-update/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-bulk-update/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-bulk-update/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -2402,20 +2486,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T09:40:29+00:00"
+            "time": "2023-01-22T20:07:44+00:00"
         },
         {
             "name": "joy/voyager-core",
-            "version": "v1.2.35",
+            "version": "v1.2.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-core.git",
-                "reference": "2a65307cf1b7a3e0a6e3619b77ffb214ee017d82"
+                "reference": "ee9bb60b6f207559150770bc4b0d85864c58c65e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/2a65307cf1b7a3e0a6e3619b77ffb214ee017d82",
-                "reference": "2a65307cf1b7a3e0a6e3619b77ffb214ee017d82",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-core/zipball/ee9bb60b6f207559150770bc4b0d85864c58c65e",
+                "reference": "ee9bb60b6f207559150770bc4b0d85864c58c65e",
                 "shasum": ""
             },
             "require": {
@@ -2474,7 +2558,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-core/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.2.35"
+                "source": "https://github.com/rxcod9/joy-voyager-core/tree/v1.2.36"
             },
             "funding": [
                 {
@@ -2482,20 +2566,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:23:41+00:00"
+            "time": "2023-01-22T20:12:32+00:00"
         },
         {
             "name": "joy/voyager-crm",
-            "version": "v2.0.8",
+            "version": "v2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-crm.git",
-                "reference": "46987de16cce8ed07b41a3e360bb761b221633d9"
+                "reference": "7db3e82a059e1b61565f6712b5e8a1a14343b4c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/46987de16cce8ed07b41a3e360bb761b221633d9",
-                "reference": "46987de16cce8ed07b41a3e360bb761b221633d9",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-crm/zipball/7db3e82a059e1b61565f6712b5e8a1a14343b4c1",
+                "reference": "7db3e82a059e1b61565f6712b5e8a1a14343b4c1",
                 "shasum": ""
             },
             "require": {
@@ -2556,7 +2640,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-crm/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v2.0.8"
+                "source": "https://github.com/rxcod9/joy-voyager-crm/tree/v2.0.9"
             },
             "funding": [
                 {
@@ -2564,20 +2648,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T09:55:41+00:00"
+            "time": "2023-01-22T20:17:36+00:00"
         },
         {
             "name": "joy/voyager-dashboard",
-            "version": "v1.2.32",
+            "version": "v1.2.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-dashboard.git",
-                "reference": "29a19ff5fed64532aecb3795903349928698bd43"
+                "reference": "fa833eeaf9847744ec7c7441aa4db9d88a4ce397"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-dashboard/zipball/29a19ff5fed64532aecb3795903349928698bd43",
-                "reference": "29a19ff5fed64532aecb3795903349928698bd43",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-dashboard/zipball/fa833eeaf9847744ec7c7441aa4db9d88a4ce397",
+                "reference": "fa833eeaf9847744ec7c7441aa4db9d88a4ce397",
                 "shasum": ""
             },
             "require": {
@@ -2636,7 +2720,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-dashboard/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-dashboard/tree/v1.2.32"
+                "source": "https://github.com/rxcod9/joy-voyager-dashboard/tree/v1.2.33"
             },
             "funding": [
                 {
@@ -2644,7 +2728,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-12-29T11:49:06+00:00"
+            "time": "2023-01-22T20:18:54+00:00"
         },
         {
             "name": "joy/voyager-data-settings",
@@ -2728,16 +2812,16 @@
         },
         {
             "name": "joy/voyager-data-type-settings",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-data-type-settings.git",
-                "reference": "1ec4482aee81f23aa87f1bbd7eea8cbe16a648db"
+                "reference": "6b13e9ff9cd5fda8134d572ff27ec23a69be7190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-type-settings/zipball/1ec4482aee81f23aa87f1bbd7eea8cbe16a648db",
-                "reference": "1ec4482aee81f23aa87f1bbd7eea8cbe16a648db",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-data-type-settings/zipball/6b13e9ff9cd5fda8134d572ff27ec23a69be7190",
+                "reference": "6b13e9ff9cd5fda8134d572ff27ec23a69be7190",
                 "shasum": ""
             },
             "require": {
@@ -2796,7 +2880,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-data-type-settings/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-data-type-settings/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-data-type-settings/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -2804,20 +2888,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:00:55+00:00"
+            "time": "2023-01-22T20:22:58+00:00"
         },
         {
             "name": "joy/voyager-datatable",
-            "version": "v2.0.14",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "bda148b123722c5fb0de7032e013d9ad5c117d3c"
+                "reference": "3fee38f64b322ae82535b9e65f616628dcec71c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/bda148b123722c5fb0de7032e013d9ad5c117d3c",
-                "reference": "bda148b123722c5fb0de7032e013d9ad5c117d3c",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/3fee38f64b322ae82535b9e65f616628dcec71c1",
+                "reference": "3fee38f64b322ae82535b9e65f616628dcec71c1",
                 "shasum": ""
             },
             "require": {
@@ -2875,7 +2959,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v2.0.14"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v2.1.0"
             },
             "funding": [
                 {
@@ -2883,20 +2967,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:51:16+00:00"
+            "time": "2023-01-22T21:45:59+00:00"
         },
         {
             "name": "joy/voyager-duplicate",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-duplicate.git",
-                "reference": "bd62bc3aa6f9c0fe7fcc67ff981cbff7ce015b1c"
+                "reference": "7cd1aef8196f461ff32d97dea625cfb8ade0cb3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-duplicate/zipball/bd62bc3aa6f9c0fe7fcc67ff981cbff7ce015b1c",
-                "reference": "bd62bc3aa6f9c0fe7fcc67ff981cbff7ce015b1c",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-duplicate/zipball/7cd1aef8196f461ff32d97dea625cfb8ade0cb3a",
+                "reference": "7cd1aef8196f461ff32d97dea625cfb8ade0cb3a",
                 "shasum": ""
             },
             "require": {
@@ -2955,7 +3039,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-duplicate/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-duplicate/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-duplicate/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -2963,20 +3047,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:06:15+00:00"
+            "time": "2023-01-22T20:23:35+00:00"
         },
         {
             "name": "joy/voyager-export",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-export.git",
-                "reference": "0ddcbdd183d075a4f338fcadf5cf3b50c407af60"
+                "reference": "6d3e8ac8f87c955f0771a4079648cc80518c323c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/0ddcbdd183d075a4f338fcadf5cf3b50c407af60",
-                "reference": "0ddcbdd183d075a4f338fcadf5cf3b50c407af60",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-export/zipball/6d3e8ac8f87c955f0771a4079648cc80518c323c",
+                "reference": "6d3e8ac8f87c955f0771a4079648cc80518c323c",
                 "shasum": ""
             },
             "require": {
@@ -3038,7 +3122,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-export/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-export/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -3046,20 +3130,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:07:26+00:00"
+            "time": "2023-01-22T20:24:44+00:00"
         },
         {
             "name": "joy/voyager-import",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-import.git",
-                "reference": "8f9312df8cc3d3fff158c0625e6fa2cfc1838deb"
+                "reference": "8e197fe35263386630c2e7a0f37a92e6ba8ebe2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/8f9312df8cc3d3fff158c0625e6fa2cfc1838deb",
-                "reference": "8f9312df8cc3d3fff158c0625e6fa2cfc1838deb",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-import/zipball/8e197fe35263386630c2e7a0f37a92e6ba8ebe2e",
+                "reference": "8e197fe35263386630c2e7a0f37a92e6ba8ebe2e",
                 "shasum": ""
             },
             "require": {
@@ -3120,7 +3204,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-import/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-import/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -3128,20 +3212,20 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:08:29+00:00"
+            "time": "2023-01-22T20:26:50+00:00"
         },
         {
             "name": "joy/voyager-login-as-user",
-            "version": "v1.2.33",
+            "version": "v1.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-login-as-user.git",
-                "reference": "1eb052539b71ab86a0a0bb44e5e8b6031f9a61de"
+                "reference": "a4d9d7a3f936d54c67708310b1759b0d35906169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-login-as-user/zipball/1eb052539b71ab86a0a0bb44e5e8b6031f9a61de",
-                "reference": "1eb052539b71ab86a0a0bb44e5e8b6031f9a61de",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-login-as-user/zipball/a4d9d7a3f936d54c67708310b1759b0d35906169",
+                "reference": "a4d9d7a3f936d54c67708310b1759b0d35906169",
                 "shasum": ""
             },
             "require": {
@@ -3201,7 +3285,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-login-as-user/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-login-as-user/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-login-as-user/tree/v1.2.34"
             },
             "funding": [
                 {
@@ -3209,7 +3293,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:09:09+00:00"
+            "time": "2023-01-22T20:27:21+00:00"
         },
         {
             "name": "joy/voyager-merge",
@@ -3294,16 +3378,16 @@
         },
         {
             "name": "joy/voyager-relations-table",
-            "version": "v1.2.33",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "601b1a004a3dc06ce4382a2dc2d85196d6b25220"
+                "reference": "0d7971d7828b7de0a15354cb820f6a665a65a764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/601b1a004a3dc06ce4382a2dc2d85196d6b25220",
-                "reference": "601b1a004a3dc06ce4382a2dc2d85196d6b25220",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/0d7971d7828b7de0a15354cb820f6a665a65a764",
+                "reference": "0d7971d7828b7de0a15354cb820f6a665a65a764",
                 "shasum": ""
             },
             "require": {
@@ -3364,7 +3448,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.2.33"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.3.0"
             },
             "funding": [
                 {
@@ -3372,7 +3456,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:49:16+00:00"
+            "time": "2023-01-22T21:47:44+00:00"
         },
         {
             "name": "joy/voyager-user-settings",
@@ -3456,16 +3540,16 @@
         },
         {
             "name": "joy/voyager-widgets",
-            "version": "v1.2.32",
+            "version": "v1.2.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-widgets.git",
-                "reference": "6067019087385b339f9a6b3b83751acc58bb9759"
+                "reference": "d00ebc26591ffb6bfe76b687b859a4a5fb172814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-widgets/zipball/6067019087385b339f9a6b3b83751acc58bb9759",
-                "reference": "6067019087385b339f9a6b3b83751acc58bb9759",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-widgets/zipball/d00ebc26591ffb6bfe76b687b859a4a5fb172814",
+                "reference": "d00ebc26591ffb6bfe76b687b859a4a5fb172814",
                 "shasum": ""
             },
             "require": {
@@ -3524,7 +3608,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-widgets/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-widgets/tree/v1.2.32"
+                "source": "https://github.com/rxcod9/joy-voyager-widgets/tree/v1.2.33"
             },
             "funding": [
                 {
@@ -3532,7 +3616,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-17T10:53:50+00:00"
+            "time": "2023-01-22T20:29:42+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3730,22 +3814,23 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.47.0",
+            "version": "v9.48.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "92810d88f9a4252095a56c05541b07940363367c"
+                "reference": "c78ae7aeb0cbcb1a205050d3592247ba07f5b711"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/92810d88f9a4252095a56c05541b07940363367c",
-                "reference": "92810d88f9a4252095a56c05541b07940363367c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/c78ae7aeb0cbcb1a205050d3592247ba07f5b711",
+                "reference": "c78ae7aeb0cbcb1a205050d3592247ba07f5b711",
                 "shasum": ""
             },
             "require": {
+                "brick/math": "^0.10.2",
                 "doctrine/inflector": "^2.0",
                 "dragonmantank/cron-expression": "^3.3.2",
-                "egulias/email-validator": "^3.2.1",
+                "egulias/email-validator": "^3.2.1|^4.0",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "fruitcake/php-cors": "^1.2",
@@ -3834,7 +3919,8 @@
                 "phpstan/phpstan": "^1.4.7",
                 "phpunit/phpunit": "^9.5.8",
                 "predis/predis": "^1.1.9|^2.0.2",
-                "symfony/cache": "^6.0"
+                "symfony/cache": "^6.0",
+                "symfony/http-client": "^6.0"
             },
             "suggest": {
                 "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
@@ -3913,7 +3999,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-01-10T16:10:09+00:00"
+            "time": "2023-01-17T15:06:19+00:00"
         },
         {
             "name": "laravel/passport",
@@ -4060,16 +4146,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "bf5cb6c256d19a108bdfaca121b2594da063fbd5"
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/bf5cb6c256d19a108bdfaca121b2594da063fbd5",
-                "reference": "bf5cb6c256d19a108bdfaca121b2594da063fbd5",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/d09d69bac55708fcd4a3b305d760e673d888baf9",
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9",
                 "shasum": ""
             },
             "require": {
@@ -4121,7 +4207,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2023-01-06T15:43:53+00:00"
+            "time": "2023-01-13T15:41:49+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -4694,16 +4780,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.12.1",
+            "version": "3.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "b934123c1f11ada6363d057d691e3065fa6d6d49"
+                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b934123c1f11ada6363d057d691e3065fa6d6d49",
-                "reference": "b934123c1f11ada6363d057d691e3065fa6d6d49",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f6377c709d2275ed6feaf63e44be7a7162b0e77f",
+                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f",
                 "shasum": ""
             },
             "require": {
@@ -4765,7 +4851,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.12.1"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.12.2"
             },
             "funding": [
                 {
@@ -4781,7 +4867,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-06T16:34:48+00:00"
+            "time": "2023-01-19T12:02:19+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -5763,16 +5849,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.8",
+            "version": "v3.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368"
+                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
-                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
+                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
                 "shasum": ""
             },
             "require": {
@@ -5782,6 +5868,7 @@
                 "nette/di": "<3.0.6"
             },
             "require-dev": {
+                "jetbrains/phpstorm-attributes": "dev-master",
                 "nette/tester": "~2.0",
                 "phpstan/phpstan": "^1.0",
                 "tracy/tracy": "^2.3"
@@ -5842,9 +5929,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.8"
+                "source": "https://github.com/nette/utils/tree/v3.2.9"
             },
-            "time": "2022-09-12T23:36:20+00:00"
+            "time": "2023-01-18T03:26:20+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -8711,28 +8798,29 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v6.2.2",
+            "version": "6.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "b355ad81f1d2987c47dcd3b04d5dce669e1e62e6"
+                "reference": "2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/b355ad81f1d2987c47dcd3b04d5dce669e1e62e6",
-                "reference": "b355ad81f1d2987c47dcd3b04d5dce669e1e62e6",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0",
+                "reference": "2e2ac7582e90ba5ae5a37a704634f4bc6ac882f0",
                 "shasum": ""
             },
             "require": {
-                "egulias/email-validator": "^2.1.10|^3",
+                "egulias/email-validator": "^2.1.10|^3|^4",
                 "php": ">=8.1",
                 "psr/event-dispatcher": "^1",
                 "psr/log": "^1|^2|^3",
                 "symfony/event-dispatcher": "^5.4|^6.0",
                 "symfony/mime": "^6.2",
-                "symfony/service-contracts": "^1.1|^2|^3"
+                "symfony/service-contracts": "^2.5|^3"
             },
             "conflict": {
+                "symfony/http-client-contracts": "<2.5",
                 "symfony/http-kernel": "<5.4",
                 "symfony/messenger": "<6.2",
                 "symfony/mime": "<6.2",
@@ -8740,7 +8828,7 @@
             },
             "require-dev": {
                 "symfony/console": "^5.4|^6.0",
-                "symfony/http-client-contracts": "^1.1|^2|^3",
+                "symfony/http-client-contracts": "^2.5|^3",
                 "symfony/messenger": "^6.2",
                 "symfony/twig-bridge": "^6.2"
             },
@@ -8770,7 +8858,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v6.2.2"
+                "source": "https://github.com/symfony/mailer/tree/6.3"
             },
             "funding": [
                 {
@@ -8786,7 +8874,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-14T16:11:27+00:00"
+            "time": "2023-01-13T09:23:11+00:00"
         },
         {
             "name": "symfony/mime",
@@ -10779,16 +10867,16 @@
         },
         {
             "name": "yajra/laravel-datatables-oracle",
-            "version": "v10.2.2",
+            "version": "v10.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yajra/laravel-datatables.git",
-                "reference": "4bceed0a32be04591f0347b93ad4a7bdaf12f318"
+                "reference": "ad60c4aecc80257ae7dbfb7463076639d89c7739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/4bceed0a32be04591f0347b93ad4a7bdaf12f318",
-                "reference": "4bceed0a32be04591f0347b93ad4a7bdaf12f318",
+                "url": "https://api.github.com/repos/yajra/laravel-datatables/zipball/ad60c4aecc80257ae7dbfb7463076639d89c7739",
+                "reference": "ad60c4aecc80257ae7dbfb7463076639d89c7739",
                 "shasum": ""
             },
             "require": {
@@ -10850,7 +10938,7 @@
             ],
             "support": {
                 "issues": "https://github.com/yajra/laravel-datatables/issues",
-                "source": "https://github.com/yajra/laravel-datatables/tree/v10.2.2"
+                "source": "https://github.com/yajra/laravel-datatables/tree/v10.2.3"
             },
             "funding": [
                 {
@@ -10866,7 +10954,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-01-11T00:56:50+00:00"
+            "time": "2023-01-18T04:33:27+00:00"
         },
         {
             "name": "zircote/swagger-php",
@@ -11636,16 +11724,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "77feb38df1cf8700c19487957dfb12087cd696c7"
+                "reference": "a64f78a4ab86c04a4c5de39bea20a8d36ad48a22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/77feb38df1cf8700c19487957dfb12087cd696c7",
-                "reference": "77feb38df1cf8700c19487957dfb12087cd696c7",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/a64f78a4ab86c04a4c5de39bea20a8d36ad48a22",
+                "reference": "a64f78a4ab86c04a4c5de39bea20a8d36ad48a22",
                 "shasum": ""
             },
             "require": {
@@ -11692,7 +11780,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-01-10T16:14:21+00:00"
+            "time": "2023-01-11T14:35:04+00:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -13799,6 +13887,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "joy/voyager-bread-sample": 20,
         "henzeb/composer-link": 15
     },
     "prefer-stable": true,

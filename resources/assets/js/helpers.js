@@ -77,6 +77,14 @@ var initSelect2 = function (el, options) {
         ...{ width: '100%' },
         ...options,
     });
+
+    $(el).on('select2:select', function (e) {
+        var data = e.params.data;
+        if (data.id == '') {
+            // "None" was selected. Clear all selected options
+            $(this).val([]).trigger('change');
+        }
+    });
 }
 
 // select.select2-ajax
@@ -167,8 +175,17 @@ var initSelect2MorphToType = function (el, options) {
         ...options,
     });
 
-    $(el).on('change', function (e) {
-        $('select.select2-morph-to-ajax[name=' + $(el).data('column') + ']').val(null).trigger('change');
+    $(el).on('change.select2-morph-to-type', function (e) {
+        const parent = $(this).closest('.form-group');
+        let idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', parent);
+        if(idEl.length <= 0) {
+            idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', parent);
+        }
+        if(!idEl.prop('multiple')) {
+            idEl.val(null).trigger('change');
+        } else {
+            idEl.val([]).trigger('change');
+        }
     });
 }
 
@@ -195,10 +212,11 @@ var initSelect2MorphToAjax = function (el, options) {
                 ajax: {
                     url: $(this).data('get-items-route'),
                     data: function (params) {
+                        const parent = $(this).closest('.form-group');
                         var query = {
                             search: params.term,
                             type: $(this).data('get-items-field'),
-                            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']').val(),
+                            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', parent).val(),
                             method: $(this).data('method'),
                             id: $(this).data('id'),
                             page: params.page || 1
