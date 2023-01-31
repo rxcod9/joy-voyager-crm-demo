@@ -119,5 +119,11 @@
 		</div>
 	</div>
 
+    @env(['local', 'demo'])
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26678290.js"></script>
+        <!-- End of HubSpot Embed Code -->
+    @endenv
+
 </body>
 </html>
