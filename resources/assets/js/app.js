@@ -113,7 +113,7 @@ $(document).ready(function () {
     $('.datepicker').datetimepicker({
         useCurrent: false,
         showClear: true,
-        debug: true,
+        debug: false,
         showClose: true,
         widgetPositioning: {
             vertical: 'bottom',

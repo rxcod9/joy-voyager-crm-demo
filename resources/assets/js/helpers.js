@@ -72,13 +72,13 @@ var bootstrapAlerter = function (customOptions) {
 }
 
 // select.select2
-var initSelect2 = function (el, options) {
-    $(el).select2({
+var initSelect2 = function (el, parent, options) {
+    $(el, parent).select2({
         ...{ width: '100%' },
         ...options,
     });
 
-    $(el).on('select2:select', function (e) {
+    $(el, parent).on('select2:select', function (e) {
         var data = e.params.data;
         if (data.id == '') {
             // "None" was selected. Clear all selected options
@@ -88,8 +88,8 @@ var initSelect2 = function (el, options) {
 }
 
 // select.select2-ajax
-var initSelect2Ajax = function (el, options) {
-    $(el).each(function () {
+var initSelect2Ajax = function (el, parent, options) {
+    $(el, parent).each(function () {
         $(this).select2({
             ...{
                 width: '100%',
@@ -169,17 +169,17 @@ var initSelect2Ajax = function (el, options) {
 }
 
 // select.select2-morph-to-type
-var initSelect2MorphToType = function (el, options) {
-    $(el).select2({
+var initSelect2MorphToType = function (el, parent, options) {
+    $(el, parent).select2({
         ...{ width: '100%' },
         ...options,
     });
 
-    $(el).on('change.select2-morph-to-type', function (e) {
-        const parent = $(this).closest('.form-group');
-        let idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', parent);
+    $(el, parent).on('change.select2-morph-to-type', function (e) {
+        const thisParent = $(this).closest('.form-group');
+        let idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', thisParent);
         if(idEl.length <= 0) {
-            idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', parent);
+            idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', thisParent);
         }
         if(!idEl.prop('multiple')) {
             idEl.val(null).trigger('change');
@@ -190,8 +190,8 @@ var initSelect2MorphToType = function (el, options) {
 }
 
 // select.select2-morph-to-ajax
-var initSelect2MorphToAjax = function (el, options) {
-    $(el).each(function () {
+var initSelect2MorphToAjax = function (el, parent, options) {
+    $(el, parent).each(function () {
         $(this).select2({
             ...{
                 width: '100%',
@@ -212,11 +212,11 @@ var initSelect2MorphToAjax = function (el, options) {
                 ajax: {
                     url: $(this).data('get-items-route'),
                     data: function (params) {
-                        const parent = $(this).closest('.form-group');
+                        const thisParent = $(this).closest('.form-group');
                         var query = {
                             search: params.term,
                             type: $(this).data('get-items-field'),
-                            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', parent).val(),
+                            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', thisParent).val(),
                             method: $(this).data('method'),
                             id: $(this).data('id'),
                             page: params.page || 1
@@ -276,6 +276,37 @@ var setImageValue = function (url) {
     $('.mce-btn.mce-open').parent().find('.mce-textbox').val(url);
 }
 
+var initMatchHeight = function (parent) {
+    $('.match-height', parent).matchHeight();
+}
+
+var initDataTable = function (parent) {
+    $('.datatable', parent).DataTable({
+        "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>'
+    });
+}
+
+var initDatepicker = function (parent) {
+    $('.datepicker', parent).datetimepicker({
+        useCurrent: false,
+        showClear: true,
+        debug: false,
+        showClose: true,
+        widgetPositioning: {
+            vertical: 'bottom',
+        },
+    });
+}
+
+var initEasymde = function (parent) {
+    $('textarea.easymde', parent).each(function () {
+        var easymde = new EasyMDE({
+            element: this
+        });
+        easymde.render();
+    });
+}
+
 exports.setImageValue = setImageValue;
 exports.displayAlert = displayAlert;
 exports.displayAlerts = displayAlerts;
@@ -285,3 +316,7 @@ exports.initSelect2Ajax = initSelect2Ajax;
 
 exports.initSelect2MorphToType = initSelect2MorphToType;
 exports.initSelect2MorphToAjax = initSelect2MorphToAjax;
+exports.initMatchHeight = initMatchHeight;
+exports.initDataTable = initDataTable;
+exports.initDatepicker = initDatepicker;
+exports.initEasymde = initEasymde;
