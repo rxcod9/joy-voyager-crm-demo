@@ -112,6 +112,10 @@ body {
   z-index: 1;
 }
 
+.notfound p.notfound-footer {
+  margin-top: 25px;
+}
+
 @media only screen and (max-width: 480px) {
   .notfound .notfound-404 {
     position: relative;
