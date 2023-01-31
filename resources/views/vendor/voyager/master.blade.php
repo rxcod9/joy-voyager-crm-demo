@@ -145,5 +145,11 @@ if (\Illuminate\Support\Str::startsWith(Auth::user()->avatar, 'http://') || \Ill
     @foreach(config('voyager.additional_js') as $js)<script type="text/javascript" src="{{ asset($js) }}"></script>@endforeach
 @endif
 
+@env(['local', 'demo'])
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26678290.js"></script>
+    <!-- End of HubSpot Embed Code -->
+@endenv
+
 </body>
 </html>
