@@ -206,7 +206,7 @@ $(document).ready(function () {
   $('.datepicker').datetimepicker({
     useCurrent: false,
     showClear: true,
-    debug: true,
+    debug: false,
     showClose: true,
     widgetPositioning: {
       vertical: 'bottom'
@@ -310,11 +310,11 @@ var bootstrapAlerter = function bootstrapAlerter(customOptions) {
 };
 
 // select.select2
-var initSelect2 = function initSelect2(el, options) {
-  $(el).select2(_objectSpread(_objectSpread({}, {
+var initSelect2 = function initSelect2(el, parent, options) {
+  $(el, parent).select2(_objectSpread(_objectSpread({}, {
     width: '100%'
   }), options));
-  $(el).on('select2:select', function (e) {
+  $(el, parent).on('select2:select', function (e) {
     var data = e.params.data;
     if (data.id == '') {
       // "None" was selected. Clear all selected options
@@ -324,8 +324,8 @@ var initSelect2 = function initSelect2(el, options) {
 };
 
 // select.select2-ajax
-var initSelect2Ajax = function initSelect2Ajax(el, options) {
-  $(el).each(function () {
+var initSelect2Ajax = function initSelect2Ajax(el, parent, options) {
+  $(el, parent).each(function () {
     $(this).select2(_objectSpread(_objectSpread({}, {
       width: '100%',
       tags: $(this).hasClass('taggable'),
@@ -391,15 +391,15 @@ var initSelect2Ajax = function initSelect2Ajax(el, options) {
 };
 
 // select.select2-morph-to-type
-var initSelect2MorphToType = function initSelect2MorphToType(el, options) {
-  $(el).select2(_objectSpread(_objectSpread({}, {
+var initSelect2MorphToType = function initSelect2MorphToType(el, parent, options) {
+  $(el, parent).select2(_objectSpread(_objectSpread({}, {
     width: '100%'
   }), options));
-  $(el).on('change.select2-morph-to-type', function (e) {
-    var parent = $(this).closest('.form-group');
-    var idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', parent);
+  $(el, parent).on('change.select2-morph-to-type', function (e) {
+    var thisParent = $(this).closest('.form-group');
+    var idEl = $('select.select2-morph-to-ajax[name=' + $(this).data('column') + ']', thisParent);
     if (idEl.length <= 0) {
-      idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', parent);
+      idEl = $('select.select2-morph-to-ajax[name="' + $(this).data('column') + '[]"]', thisParent);
     }
     if (!idEl.prop('multiple')) {
       idEl.val(null).trigger('change');
@@ -410,8 +410,8 @@ var initSelect2MorphToType = function initSelect2MorphToType(el, options) {
 };
 
 // select.select2-morph-to-ajax
-var initSelect2MorphToAjax = function initSelect2MorphToAjax(el, options) {
-  $(el).each(function () {
+var initSelect2MorphToAjax = function initSelect2MorphToAjax(el, parent, options) {
+  $(el, parent).each(function () {
     $(this).select2(_objectSpread(_objectSpread({}, {
       width: '100%',
       tags: $(this).hasClass('taggable'),
@@ -429,11 +429,11 @@ var initSelect2MorphToAjax = function initSelect2MorphToAjax(el, options) {
       ajax: {
         url: $(this).data('get-items-route'),
         data: function data(params) {
-          var parent = $(this).closest('.form-group');
+          var thisParent = $(this).closest('.form-group');
           var query = {
             search: params.term,
             type: $(this).data('get-items-field'),
-            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', parent).val(),
+            "type-column-value": $('select.select2-morph-to-type[name=' + $(this).data('type-column') + ']', thisParent).val(),
             method: $(this).data('method'),
             id: $(this).data('id'),
             page: params.page || 1
@@ -480,6 +480,33 @@ var initSelect2MorphToAjax = function initSelect2MorphToAjax(el, options) {
 var setImageValue = function setImageValue(url) {
   $('.mce-btn.mce-open').parent().find('.mce-textbox').val(url);
 };
+var initMatchHeight = function initMatchHeight(parent) {
+  $('.match-height', parent).matchHeight();
+};
+var initDataTable = function initDataTable(parent) {
+  $('.datatable', parent).DataTable({
+    "dom": '<"top"fl<"clear">>rt<"bottom"ip<"clear">>'
+  });
+};
+var initDatepicker = function initDatepicker(parent) {
+  $('.datepicker', parent).datetimepicker({
+    useCurrent: false,
+    showClear: true,
+    debug: false,
+    showClose: true,
+    widgetPositioning: {
+      vertical: 'bottom'
+    }
+  });
+};
+var initEasymde = function initEasymde(parent) {
+  $('textarea.easymde', parent).each(function () {
+    var easymde = new EasyMDE({
+      element: this
+    });
+    easymde.render();
+  });
+};
 exports.setImageValue = setImageValue;
 exports.displayAlert = displayAlert;
 exports.displayAlerts = displayAlerts;
@@ -488,6 +515,10 @@ exports.initSelect2 = initSelect2;
 exports.initSelect2Ajax = initSelect2Ajax;
 exports.initSelect2MorphToType = initSelect2MorphToType;
 exports.initSelect2MorphToAjax = initSelect2MorphToAjax;
+exports.initMatchHeight = initMatchHeight;
+exports.initDataTable = initDataTable;
+exports.initDatepicker = initDatepicker;
+exports.initEasymde = initEasymde;
 
 /***/ }),
 
