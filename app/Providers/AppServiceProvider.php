@@ -11,6 +11,7 @@ use App\Models\DataType;
 use App\Models\DataTypeSetting;
 use App\Models\Menu;
 use App\Models\MenuItem;
+use App\Models\Notification;
 use App\Models\Page;
 use App\Models\Permission;
 use App\Models\Post;
@@ -71,6 +72,7 @@ class AppServiceProvider extends ServiceProvider
         Voyager::useModel('DataSettingType', DataSettingType::class);
         Voyager::useModel('DataSetting', DataSetting::class);
         Voyager::useModel('Sample', Sample::class);
+        Voyager::useModel('Notification', Notification::class);
 
         $router->aliasMiddleware('admin.user', VoyagerAdminMiddleware::class);
     }

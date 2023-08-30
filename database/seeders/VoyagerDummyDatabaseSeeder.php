@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Joy\VoyagerBreadSample\Database\Seeders\VoyagerDummyDatabaseSeeder as SampleVoyagerDummyDatabaseSeeder;
 
 class VoyagerDummyDatabaseSeeder extends Seeder
 {
@@ -21,10 +20,12 @@ class VoyagerDummyDatabaseSeeder extends Seeder
             PagesTableSeeder::class,
             TranslationsTableSeeder::class,
             PermissionRoleTableSeeder::class,
-            SampleVoyagerDummyDatabaseSeeder::class,
+            \Joy\VoyagerBreadSample\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
+            \Joy\VoyagerBreadNotification\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerCrm\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerDataSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
             \Joy\VoyagerDataTypeSettings\Database\Seeders\VoyagerDummyDatabaseSeeder::class,
+            DummyNotificationsTableSeeder::class,
         ]);
     }
 }
