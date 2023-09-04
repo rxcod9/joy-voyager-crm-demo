@@ -39,6 +39,9 @@
     @if (Route::has('voyager.login'))
         <div class="absolute top-0 right-0 px-6 py-4">
             @auth
+                @if (Route::has('l5-swagger.default.api'))
+                    <a target="_blank" href="{{ route('l5-swagger.default.api') }}" class="text-sm text-gray-700 underline">Swagger UI</a>
+                @endif
                 @if (Route::has('voyager.dashboard'))
                     <a href="{{ route('voyager.dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                 @else
