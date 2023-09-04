@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Schema\Builder as SchemaBuilder;
+use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\Schema;
 
 class CreateNotificationsTable extends Migration
@@ -14,7 +14,7 @@ class CreateNotificationsTable extends Migration
      */
     public function up()
     {
-        SchemaBuilder::defaultMorphKeyType('uuid');
+        Builder::defaultMorphKeyType('uuid');
 
         Schema::create('notifications', function (Blueprint $table) {
             $table->uuid('id')->primary();

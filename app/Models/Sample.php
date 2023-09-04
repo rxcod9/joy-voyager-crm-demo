@@ -5,6 +5,7 @@ namespace App\Models;
 use Database\Factories\SampleFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 use Joy\VoyagerCrm\Models\Traits\Uuids;
 use Joy\VoyagerCrm\Models\Traits\CreatedModifiedBy;
 use Joy\VoyagerBreadSample\Models\Sample as ModelsSample;
@@ -38,5 +39,13 @@ class Sample extends ModelsSample
     protected static function newFactory()
     {
         return SampleFactory::new();
+    }
+
+    public function getCoordinatesAttribute($value)
+    {
+        if (Str::contains($value, 'POINT')) {
+            return $value;
+        }
+        return $value && !Str::contains($value, 'POINT') ? json_encode($this->getCoordinates()) : $value;
     }
 }

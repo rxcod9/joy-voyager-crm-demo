@@ -5,7 +5,7 @@ return [
     'documentations' => [
         'default' => [
             'api' => [
-                'title' => 'Joy Voyager Swagger UI',
+                'title' => 'Joy Voyager CRM Swagger UI',
             ],
 
             'routes' => [
