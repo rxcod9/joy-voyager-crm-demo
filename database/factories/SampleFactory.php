@@ -73,8 +73,8 @@ class SampleFactory extends Factory
                 "option2" => "Option 2 Text",
             ]),
             'select2'            => $this->faker->randomKey([
-                "option1" => "Option 1 Text",
-                "option2" => "Option 2 Text",
+                "1" => "Option 1 Text",
+                "2" => "Option 2 Text",
             ]),
             'select2_from_ajax'  => $this->faker->randomKey([
                 "option1" => "Option 1 Text",
