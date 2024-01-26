@@ -1,0 +1,9 @@
+{
+    "packages": {
+        "joy\/voyager-crm": "..\/packages\/joy-voyager-crm",
+        "joy\/voyager-core": "..\/packages\/joy-voyager-core",
+        "joy\/voyager-datatable": "..\/packages\/joy-voyager-datatable",
+        "joy\/voyager-bread-sample": "..\/packages\/joy-voyager-bread-sample",
+        "joy\/voyager-api": "..\/packages\/joy-voyager-api"
+    }
+}
