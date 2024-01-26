@@ -7,7 +7,7 @@ services:
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
-        image: sail-laravel-8.1/app
+        image: sail-crm-8.1/app
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         ports:
@@ -38,7 +38,7 @@ services:
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
         volumes:
-            - 'sail-laravel-mysql:/var/lib/mysql'
+            - 'sail-crm-mysql:/var/lib/mysql'
             - './vendor/laravel/sail/database/mysql/create-testing-database.sh:/docker-entrypoint-initdb.d/10-create-testing-database.sh'
         networks:
             - sail
@@ -57,9 +57,9 @@ networks:
     sail:
         driver: bridge
 volumes:
-    sail-laravel-mysql:
+    sail-crm-mysql:
         driver: local
-    sail-laravel-pgsql:
+    sail-crm-pgsql:
         driver: local
-    sail-laravel-redis:
+    sail-crm-redis:
         driver: local
