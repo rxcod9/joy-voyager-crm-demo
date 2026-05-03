@@ -50,7 +50,7 @@
         "fakerphp/faker": "^1.9.1",
         "friendsofphp/php-cs-fixer": "^3.7",
         "henzeb/composer-link": "^0.0.3@alpha",
-        "kitloong/laravel-migrations-generator": "^6.6",
+        "kitloong/laravel-migrations-generator": "^7.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "7.8.1",
