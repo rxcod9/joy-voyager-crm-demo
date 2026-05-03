@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('cache-clear-all', 'VoyagerBreadController@cacheClearAll')->name('cache-clear-all');

@@ -198,5 +198,21 @@ class MenuItemsTableSeeder extends Seeder
                 'order'      => ++$maxOrder,
             ])->save();
         }
+
+        $menuItem = Voyager::model('MenuItem')->firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('seeders.menu_items.clear_cache'),
+            'url'     => '',
+            'route'   => 'cache-clear-all',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-refresh',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => ++$maxOrder,
+            ])->save();
+        }
     }
 }
