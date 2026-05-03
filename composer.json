@@ -37,7 +37,7 @@
         "laravel/framework": "~6.0|~7.0|~8.0|^9.0|^10.0",
         "laravel/pint": "^1.1",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7",
+        "laravel/tinker": "^3.0",
         "psr/simple-cache": "^2.0",
         "spatie/laravel-ignition": "^1.4",
         "spatie/laravel-responsecache": "^7.4",
